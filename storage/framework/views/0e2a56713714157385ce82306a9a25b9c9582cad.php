@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+</head>
+<body>
+    <div>
+        <h1>Buat Account Baru!</h1>
+    </div>
+    <div>
+        <h3>Sign Up Form</h3>
+        <form action="/welcome" method="POST">
+        @scrf
+            <label for="fname">First Name:</label><br><br>
+            <input type="text" id="fname" name="fname"><br><br>
+            <label for="lname">Last Name:</label><br><br>
+            <input type="text" id="lname" name="lname"><br>
+            <br>
+            <label>Gender:</label><br><br>
+            <input type="radio" id="male" name="gender" value="male">Laki-laki<br>
+            <input type="radio" id= "female" name="gender" value="female">Perempuan<br>
+            <input type="radio" id="other" name="gender" value="other">Other<br>
+            <br>
+            <label>Nationality:</label><br><br>
+            <select>
+                <option value="ind">Indonesia</option>
+                <option value="sgr">Singapura</option>
+                <option value="mly"> Malaysia</option>
+            </select>
+            <br><br>
+            <label>Language Spoken:</label><br><br>
+            <input type="checkbox" id="bi" name="Lspoken" value="bi">Bahasa Indonesia<br>
+            <input type="checkbox" id="eng" name="Lspoken" value="eng">English<br>
+            <input type="checkbox" id="other" name="Lspoken" value="other">Other<br>
+            <br>
+            <Label for="bio_user">Bio:</Label><br><br>
+            <textarea cols="30" rows="7" id="bio_user"></textarea><br>
+            <br>
+            <input type="submit" value="Submit"> 
+        </form>
+    </div>
+</body>
+</html><?php /**PATH C:\xampp\htdocs\blog\resources\views/register.blade.php ENDPATH**/ ?>
